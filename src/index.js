@@ -22,7 +22,7 @@ import {Image_paths} from './Image_paths';
     }
 
     componentDidMount() {
-        this.interval = setInterval(this.nextImage, 1000);
+        this.interval = setInterval(this.nextImage, 3000);
     }
 
     componentWillMount() {

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'roman_sdregular';
+    src: url('fonts/roman_sd-webfont.woff2') format('woff2'),
+         url('fonts/roman_sd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: roman_sdregular;
+    text-shadow: .05em .05em #999999;
+    text-align: center;
+}
+
+.wide_section {
+    width: 75%;
+    margin: 3% auto;
+    background-image: url("backgrounds_and_icons/paper.png");
+    background-repeat: repeat;
+    box-shadow: 5px 5px 5px 5px #000000;
+}
+
+body {
+    background-image: url("backgrounds_and_icons/mahogany.png");
+    background-repeat: repeat;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
