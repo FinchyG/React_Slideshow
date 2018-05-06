@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Slideshow} from './Slideshow';
 import {Image_paths} from './Image_paths';
 
-  class SlideshowContainer extends React.Component {
+export class SlideshowContainer extends React.Component {
     
     constructor(props) {
       super(props);
@@ -34,6 +34,7 @@ import {Image_paths} from './Image_paths';
         return <Slideshow src={src}/>;
     }
   }
+
 
   ReactDOM.render(<SlideshowContainer />,
                  document.getElementById('root'));
