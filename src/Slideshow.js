@@ -6,7 +6,7 @@ export class Slideshow extends React.Component {
       return(
         <div>
           <h1>Quiz Crazy</h1>
-          <img src={src} />
+          <img src={src} alt="" />
         </div>
       );
     }
