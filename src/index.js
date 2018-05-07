@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Slideshow} from './Slideshow';
+import {Slideshow} from './slideshow';
 import {Image_paths} from './Image_paths';
 
 export class SlideshowContainer extends React.Component {

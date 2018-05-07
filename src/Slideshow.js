@@ -1,13 +1,11 @@
 import React from 'react';
 
-export class Slideshow extends React.Component {
-    render() {
-      const src = this.props.src;
+export const Slideshow = (props) => {
+    
       return(
         <div>
           <h1>Quiz Crazy</h1>
-          <img src={src} alt="" />
+          <img src={props.src} alt="" />
         </div>
       );
-    }
 }

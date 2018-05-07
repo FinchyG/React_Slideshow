@@ -14,4 +14,4 @@ export const Image_paths = [
     history,
     science_and_nature,
     sport
-  ]
+]
