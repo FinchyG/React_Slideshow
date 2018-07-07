@@ -1,40 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Slideshow} from './slideshow';
-import {Image_paths} from './Image_paths';
-
-export class SlideshowContainer extends React.Component {
-    
-    constructor(props) {
-      super(props);
-
-      this.state = {currentImage: 0};
-
-      this.interval = null;
-
-      this.nextImage = this.nextImage.bind(this);
-    }
-
-    nextImage() {
-        let current = this.state.currentImage;
-        let next    = ++current % Image_paths.length;
-        this.setState({currentImage: next});
-    }
-
-    componentDidMount() {
-        this.interval = setInterval(this.nextImage, 3000);
-    }
-
-    componentWillMount() {
-        clearInterval(this.interval);
-    }
-    
-    render() {
-        const src= Image_paths[this.state.currentImage];
-        return <Slideshow src={src}/>;
-    }
-  }
+import SlideshowContainer from './slideshowContainer';
 
 
-  ReactDOM.render(<SlideshowContainer />,
-                 document.getElementById('root'));
+ReactDOM.render(<SlideshowContainer />, document.getElementById('root'));
