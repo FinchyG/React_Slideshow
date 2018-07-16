@@ -41,4 +41,4 @@ export default class SlideshowContainer extends React.Component {
         return <Slideshow src={src}/>;
     }
 
-  }
+}
